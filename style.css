@@ -79,7 +79,7 @@ h3 {
 
 nav {
   float: right;
-  margin-top: 25px;--)
+  margin-top: 25px;
 }
 
 nav a {
@@ -220,6 +220,7 @@ input[type=submit] {
 
 
 @media screen and (max-width: 980px ) {
+  /* everything 980 pixels and below will get these rules */
   .main-section {
     width: 100%;
   }
@@ -230,7 +231,14 @@ input[type=submit] {
   #logo {
    width: 100%;
   }
-
+  
+  nav{
+    float: none;
+    margin: auto;
+    /* display: inline-block; */
+    width: fit-content;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .main-section {
@@ -242,7 +250,7 @@ input[type=submit] {
    #logo {
   width: 100%;
 }
-
+}
 
 @media screen and (max-width: 640) {
   .main-section {
@@ -254,5 +262,6 @@ input[type=submit] {
   #logo {
     width: 100%;
   }
+}
 
   
